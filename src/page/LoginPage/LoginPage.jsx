@@ -13,9 +13,9 @@ export default class LoginPage extends Component {
         console.log("yes didmount")
     }
     handleOnchangeForm = (event) => {
-        console.log("🚀 ~ file: LoginPage.jsx:9 ~ LoginPage ~ event:", event.target.name)
+        // console.log("🚀 ~ file: LoginPage.jsx:9 ~ LoginPage ~ event:", event.target.name)
         let { value, name } = event.target
-        console.log("🚀 ~ file: LoginPage.jsx:11 ~ LoginPage ~ value, name:", value, name)
+        // console.log("🚀 ~ file: LoginPage.jsx:11 ~ LoginPage ~ value, name:", value, name)   
         this.setState({ [name]: value })
     }
     handleLogin = () => {
@@ -54,7 +54,6 @@ export default class LoginPage extends Component {
 
                     <div className="form-group">
                         <input
-
                             onChange={this.handleOnchangeForm}
                             type="text" className="form-control" placeholder='Username' value={this.state.username}
                             name='username'

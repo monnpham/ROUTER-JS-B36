@@ -1,0 +1,17 @@
+@font-face {
+    font-family: myFontGame;
+    src: url(./Pony.ttf);
+}
+
+.game-container {
+    height: 100vh;
+    width: 100vw;
+    /* background-image: url("bgGame.png"); */
+    background-size: cover;
+    background-position: bottom;
+    font-family: myFontGame;
+}
+
+.game-container * {
+    font-size: 50px;
+}

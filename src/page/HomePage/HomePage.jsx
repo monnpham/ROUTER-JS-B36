@@ -19,7 +19,6 @@ export default class HomePage extends Component {
                 this.setState({
                     userList: res.data.content,
                 })
-                console.log("🚀 ~ file: HomePage.jsx:26 ~ HomePage ~ list:", this.state.userList)
 
             })
             .catch((err) => {
@@ -28,7 +27,6 @@ export default class HomePage extends Component {
     }
     renderUserList = () => {
         let list = this.state.userList
-        console.log("list:", this.state.userList)
         return list.map(({ hoTen, maLoaiNguoiDung }, key) => {
             return (
                 <strong
